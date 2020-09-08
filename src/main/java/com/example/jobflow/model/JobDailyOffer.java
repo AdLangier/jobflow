@@ -24,6 +24,9 @@ public class JobDailyOffer {
 
     private String description;
 
+    private String city;
+
+
     @ManyToOne
     @JoinColumn(name = "website_id")
     private Website website;
