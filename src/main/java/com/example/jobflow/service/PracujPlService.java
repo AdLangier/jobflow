@@ -1,7 +1,10 @@
 package com.example.jobflow.service;
 
 import org.jsoup.Jsoup;
+import org.springframework.stereotype.Component;
+
 import java.io.IOException;
+@Component
 public class PracujPlService {
     public Integer getNumberOfJobs(String tagName, String city ) throws IOException {
         String url = "https://www.pracuj.pl/praca/" +tagName+
